@@ -10,12 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: Checkmarx AST@2
-  inputs:
-    CheckmarxService: 'ffd'
-    projectName: '$(Build.Repository.Name)'
-    branchName: '$(Build.SourceBranchName)'
-    tenantName: 'beta_nova8'
 
 - task: WhiteSource@21
   inputs:
