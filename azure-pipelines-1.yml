@@ -18,9 +18,7 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: Checkmarx AST@2
+- task: WhiteSource@21
   inputs:
-    CheckmarxService: 'Checkmarx One-Connection-FDD'
-    projectName: '$(Build.Repository.Name)'
-    branchName: '$(Build.SourceBranchName)'
-    tenantName: 'Beta_Nova8'
+    cwd: '$(System.DefaultWorkingDirectory)'
+    projectName: 'Teste_FDD'
