@@ -11,6 +11,8 @@ pool:
 
 steps:
 
+
 - task: WhiteSource@21
   inputs:
     cwd: '$(System.DefaultWorkingDirectory)'
+    projectName: 'WebGoat_MendFDD'
